@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/193bab2203.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Luke Bas</span><br>From London Ontario, Canada</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a software developer with a burning passion for computer programming and software design. I am an analytical thinker that uses programming and data analysis knowledge to solve practical problems. My love for this field is always driving me to keep learning and be better! I am always actively trying to improve my technical and soft skills and I believe that through technology, we can make our world a better place!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onClick="openTab('experience')">Technical Experience</p>
+                        <p class="tab-links" onClick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Windows & Linux Application Development</span><br>Using various techniques to create, maintain, and deploy applications</li>
+                            <li><span>Database Development & Design</span><br>Creating and maintaining databases of various paradigms</li>
+                            <li><span>Mobile App Development</span><br>Building Android applications as well as mobile applications within other Linux environments</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship at Mycionics Inc. May 2021 - Dec 2021</span><br>Developed an application in Ubuntu Linux to act as a control client for various robotic machinery using QT with C and C++.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>Fanshawe College - Advanced Diploma of Computer Programming and Analysis. 2023 Deans Honour Roll</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Farmer's Marketplace Website</h3>
+                        <p>This website lets produce sellers advertise, sell and send produce using a marketplace where other buyers and sellers can shop around! Fully customizable profile page, newsletter and blog; this site has all your produce needs taken care of!</p>
+                        <a href="https://github.com/michaelivanov1/spring-marketplace"><i class="fas fa-external-link-alt"></i></a><a href="#" id="site_soon">Site</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work2">
+                    <div class="layer">
+                        <h3>Calendar & Task Tracker Web App</h3>
+                        <p>This full-stack web application lets you plan and manage tasks using a responsive calendar as well as letting you review growth statistics and personal progress. </p>
+                        <a href="https://github.com/TheTrueIBeetle/Proactinators-Calendar-App"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work3">
+                    <div class="layer">
+                        <h3>Discord Bot</h3>
+                        <p>This music based Discord bot allows you to search and play music into your voice channel and has a lot of quality of life commands to manipulate the music your are listening to!</p>
+                        <a href="https://github.com/TheTrueIBeetle/Zombi-Discord-Bot"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/TheTrueIBeetle?tab=repositories" class="btn">See More</a>
+            <div id="contributions">
+                <h2>Contributions</h2>
+                <!-- <img src="https://ghchart.rshah.org/TheTrueIBeetle" alt="IBeetle's Github chart" /> -->
+                <img src="https://ghchart.rshah.org/e01919/TheTrueIBeetle" alt="IBeetle's Blue Github Chart" id="contribution-graph"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> lukeallenbas@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +1(226)-224-9058</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/luke-bas-3718841b5/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/TheTrueIBeetle"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><p>
+            Copyright © Luke / <a href="https://github.com/2016rshah/githubchart-api">Contribution Graph</a>
+        </p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
